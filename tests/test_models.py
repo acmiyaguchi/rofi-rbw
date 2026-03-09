@@ -14,6 +14,6 @@ from rofi_rbw.models.note import Note
     ],
     ids=["note", "credentials", "card"],
 )
-def test_default_targets_return_values(entry):
-    for target in entry.default_targets:
+def test_default_target_return_values(entry):
+    for target in entry.default_target:
         assert entry[target] is not None
